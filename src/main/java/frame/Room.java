@@ -14,6 +14,18 @@ public class Room {
     public Room() {
     }
 
+    public boolean inRange(int target, int range, int posx, int posy){
+        boolean valid= false;
+        for(int i=0,i<2*range+1,i++){
+            for(int j=0, j<2*range+1;j++){
+                if(room[posx-range+i][posy-range+j]==target){
+                    valid= true;
+                }
+            }
+        }
+        retrun valid;
+    }
+
     public void draw(Graphics g) {
         for (int i = 0; i < room[0].length; i++) {
             for (int j = 0; j < room.length; j++) {
