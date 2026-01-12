@@ -26,6 +26,16 @@ public class Room {
         retrun valid;
     }
 
+    public boolean isWalkable(int posx,int posy){
+        if(room[posx][posy]==0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    
+
     public void draw(Graphics g) {
         for (int i = 0; i < room[0].length; i++) {
             for (int j = 0; j < room.length; j++) {
