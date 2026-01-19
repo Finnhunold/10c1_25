@@ -32,12 +32,12 @@ public class Room {
 	..8/9 door +-10 
 	*/
 
-	int curentRoom=0;
-	int[][] room = rooms[0];
+	int curent;
+	int[][] room ;
 
     public Room() {
-							this.room = room;
-							this.curent = curentRoom;
+							this.room = rooms[0];
+							this.curent = 0;
     }
 
     public boolean inRange(int target, int range, int posx, int posy){
