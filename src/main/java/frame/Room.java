@@ -32,10 +32,12 @@ public class Room {
 	..8/9 door +-10 
 	*/
 
+	int curentRoom=0;
 	int[][] room = rooms[0];
 
     public Room() {
 							this.room = room;
+							this.curent = curentRoom;
     }
 
     public boolean inRange(int target, int range, int posx, int posy){
@@ -94,5 +96,9 @@ public class Room {
 								}
 				//gibt die positon der Eingangstür wieder
 								return {0,0} ;
-				} 
+				}
+
+			public boolean inside(){
+							if(curent==0||curent==1||){return true}else{return false}
+			} 
 }
