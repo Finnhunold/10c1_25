@@ -39,10 +39,11 @@ public class Room {
     }
 
     public boolean inRange(int target, int range, int posx, int posy){
+								//suche nur nach einerstelle!
         boolean valid= false;
         for(int i=0,i<2*range+1,i++){
             for(int j=0, j<2*range+1;j++){
-                if(room[posx-range+i][posy-range+j]==target){
+                if((room[posx-range+i][posy-range+j])%10==target){
                     valid= true;
                 }
             }
@@ -85,6 +86,12 @@ public class Room {
 				}
 				
 				public int[] enterance(){
+        for (int i = 0; i < room[0].length; i++) {
+            for (int j = 0; j < room.length; j++) {
+																if (room[i][j]==6){ return {i,j};
+													
+												}
+								}
 				//gibt die positon der Eingangstür wieder
 								return {0,0} ;
 				} 
