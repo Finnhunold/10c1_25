@@ -5,12 +5,6 @@ import java.awt.Graphics;
 
 public class Room {
 
-    int[][] room = {
-        {0, 0, 0, 0, 0},
-        {0, 1, 1, 1, 0},
-        {0, 1, 2, 1, 0},
-        {0, 0, 0, 0, 0},};
-
 	int[][][] rooms={
 		{{0, 0, 0, 0, 0},
         {0, 1, 1, 1, 0},
@@ -22,6 +16,23 @@ public class Room {
         {0, 1, 2, 1, 0},
         {0, 0, 0, 0, 0},},
 	};
+
+	/*
+	10s Bar
+	20s Street
+	30s Train Station
+	*/
+
+	/*
+	..0 floor
+	..1 wall
+	..2 table
+	..3 chair
+	..6/7 door +-1
+	..8/9 door +-10 
+	*/
+
+	int[][] room = rooms[0];
 
     public Room() {
     }
