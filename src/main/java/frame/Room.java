@@ -35,6 +35,7 @@ public class Room {
 	int[][] room = rooms[0];
 
     public Room() {
+							this.room = room;
     }
 
     public boolean inRange(int target, int range, int posx, int posy){
@@ -79,4 +80,12 @@ public class Room {
             }
         }
     }
+
+				public void switchRoom(){
+				}
+				
+				public int[] enterance(){
+				//gibt die positon der Eingangstür wieder
+								return {0,0} ;
+				} 
 }
